@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:shrinkColumns="3,4">
+
+    <TextView
+        android:gravity="center_horizontal"
+        android:text="标题"
+        android:textSize="24sp" />
+
+    <Button android:text="独占一行的按钮" />
+
+    <TableLayout
+        android:shrinkColumns="1"
+        android:stretchColumns="2">
+
+        <TableRow>
+
+            <Button android:text="普通按钮" />
+
+            <Button android:text="收缩的按钮" />
+
+            <Button android:text="拉伸的按钮" />
+        </TableRow>
+    </TableLayout>
+    <TableLayout
+        android:collapseColumns="1">
+        <Button android:text="独占一行的按钮" />
+        <TableRow>
+
+            <Button android:text="普通按钮" />
+
+            <Button android:text="收缩的按钮" />
+
+            <Button android:text="拉伸的按钮" />
+        </TableRow>
+    </TableLayout>
+    <TableRow>
+
+        <TextView
+            android:gravity="center_horizontal"
+            android:text="文本1" />
+
+        <TextView
+            android:gravity="center_horizontal"
+            android:text="文本2" />
+
+        <TextView
+            android:gravity="center_horizontal"
+            android:text="文本3" />
+
+        <TextView
+            android:gravity="center_horizontal"
+            android:text="文本4" />
+    </TableRow>
+
+    <TableRow>
+
+        <Button android:text="按钮1" />
+
+        <Button android:text="按钮2" />
+
+        <Button android:text="按钮3" />
+
+        <Button android:text="按钮4" />
+    </TableRow>
+
+    <TextView android:text="通过stretchColumns设置0,1可拉伸" />
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:stretchColumns="0,1">
+
+        <TableRow>
+
+            <Button android:text="按钮1" />
+
+            <Button android:text="按钮2" />
+
+            <Button android:text="按钮3按钮3按钮3" />
+        </TableRow>
+    </TableLayout>
+
+    <TextView android:text="通过collapseColumns隐藏第0列" />
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:collapseColumns="0">
+
+        <TableRow>
+
+            <Button android:text="按钮1" />
+
+            <Button android:text="按钮2" />
+
+            <Button android:text="按钮3按钮3按钮3" />
+        </TableRow>
+    </TableLayout>
+
+
+</TableLayout>
