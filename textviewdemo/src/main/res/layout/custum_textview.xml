@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="4dp"
+        android:height="40dp"
+        android:background="#cacee1"
+        android:gravity="center_vertical"
+        android:padding="4dp"
+        android:text="带底色的文本"
+        android:textSize="24sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="4dp"
+        android:height="40dp"
+        android:background="@drawable/bg_border"
+        android:gravity="center_vertical"
+        android:padding="4dp"
+        android:text="带shape边框的文本"
+        android:textSize="24sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="4dp"
+        android:height="40dp"
+        android:background="@drawable/bg_border2"
+        android:gravity="center_vertical"
+        android:padding="4dp"
+        android:text="带shape渐变的文本"
+        android:textSize="24sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="4dp"
+        android:height="40dp"
+        android:background="@drawable/rect_min"
+        android:gravity="center_vertical"
+        android:padding="4dp"
+        android:text="带边框的文本"
+        android:textSize="24sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_margin="4dp"
+        android:background="@drawable/rect_round_min"
+        android:gravity="center_vertical"
+        android:padding="4dp"
+        android:text="圆角边框的文本"
+        android:textSize="24sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_margin="4dp"
+        android:background="@drawable/rect_round_min_g"
+        android:gravity="center_vertical"
+        android:padding="4dp"
+        android:text="圆角边框,渐变背景的文本"
+        android:textSize="24sp" />
+</LinearLayout>

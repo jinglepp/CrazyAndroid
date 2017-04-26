@@ -1,13 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" tools:context="com.example.textviewdemo.MainActivity">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.textviewdemo.MainActivity">
 
-    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-        android:text="Hello World!" app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent"
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+    <!--字号20sp,在文本框结尾处绘制图片-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableEnd="@mipmap/ic_launcher"
+        android:text="人生苦短,我用python"
+        android:textSize="20sp" />
+    <!--中间省略,所有字母大写-->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="middle"
+        android:maxLines="1"
+        android:text="我爱Python我爱Python我爱Python我爱Python我爱Python我爱Python我爱Python我爱Python我爱Python"
+        android:textAllCaps="true" />
+    <!--对邮件电话增加链接-->
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autoLink="email|phone"
+        android:maxLines="1"
+        android:text="邮箱是 test@ttt.com,电话是10086" />
+    <!--设置文字颜色,大小,并使用阴影-->
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:shadowColor="#8036"
+        android:shadowDx="10"
+        android:shadowDy="8"
+        android:shadowRadius="20"
+        android:text="有阴影的文字"
+        android:textSize="64sp" />
 
-</android.support.constraint.ConstraintLayout>
+    <!--<TextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:password="true"-->
+    <!--android:text="密码框" />-->
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:cursorVisible="false"
+        android:focusable="false"
+        android:inputType="textPassword"
+        android:text="密码框文本1" />
+
+    <CheckedTextView
+        android:textColor="@color/colorAccent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checkMark="@drawable/ok"
+        android:onClick="onClick"
+        android:paddingEnd="20dp"
+        android:paddingStart="20dp"
+        android:text="可勾选的文本" />
+
+</LinearLayout>
