@@ -1,7 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent">
-<TextView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content" />
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/view01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/t3" />
+    <!--定义上方-->
+    <TextView
+        android:id="@+id/view02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/view01"
+        android:layout_above="@id/view01"
+        android:background="@drawable/t3" />
+    <!--下-->
+    <TextView
+        android:id="@+id/view03"
+        android:layout_alignStart="@id/view01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view01"
+        android:background="@drawable/t3" />
+    <!--左-->
+    <TextView
+        android:id="@+id/view04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@id/view01"
+        android:layout_alignTop="@id/view01"
+        android:background="@drawable/t3" />
+    <!--右-->
+    <TextView
+        android:id="@+id/view05"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/view01"
+        android:layout_alignTop="@id/view01"
+        android:background="@drawable/t3" />
 </RelativeLayout>
