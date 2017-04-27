@@ -10,8 +10,8 @@
     <stroke android:width="4px" android:color="#f0f" />
     <!-- 指定使用渐变背景色，使用sweep类型的渐变
     颜色从红色→绿色→蓝色 -->
-    <gradient android:startColor="#f00"
-        android:centerColor="#0f0"
+    <gradient android:startColor="#00f"
+        android:centerColor="#f0f"
         android:endColor="#00f"
         android:type="sweep"/>
 </shape>

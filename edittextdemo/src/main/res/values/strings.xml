@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">EditTextDemo</string>
+    <string name="edittext_hint"><font size="12">请填写登录账号</font></string>
+    <string name="hint_phone"><font size="12">请输入您的电话号码</font>
+    </string>
+</resources>
